@@ -1,0 +1,9 @@
+ROUTINE exercicio6
+Exercicio6
+
+    W "Data no formato DD/MM/YYYY: "_$ZD($h,4),!
+    W "Data no formato Horolog: "_$piece($h,",",1),!
+    W "Data no formato islâmico tabular: "_$zd($h,18),!
+    W "Mes islâmico: "_$piece($zd($h,18)," ",2),!
+    W "Quantidade de Caracteres de Marcio (sem os espaços): "_$L($tr("Marcio"," ","")),!
+    w "Trocar espaços por pipeline: "_$tr("Marcio"," ","|"),!
